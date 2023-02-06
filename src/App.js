@@ -39,7 +39,7 @@ function App() {
   const [lists, setLists] = useState([ //settodos is a function that will update
     {
       sno: 1,
-      title: "Samsung Galaxy",
+      title: "Samsun Galaxy",
       desc: "Whatever"
     },
     {
