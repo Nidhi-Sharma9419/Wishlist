@@ -1,4 +1,4 @@
-import React from 'react'
+/*import React from 'react'
 import PropTypes from 'prop-types'
 
 export default function Header(props) {     // or {title}
@@ -29,5 +29,18 @@ export default function Header(props) {     // or {title}
 </nav>
   )
 }
+*/
+import React from 'react';
+
+const Header = ({ title, searchBar }) => {
+  return (
+    <header>
+      <h1>{title}</h1>
+      {searchBar && <input type="text" placeholder="Search" />}
+    </header>
+  );
+};
+
+export default Header;
 
 
