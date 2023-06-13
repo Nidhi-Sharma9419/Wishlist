@@ -1,4 +1,4 @@
-/*import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import Header from './MyComponents/Header';
 import {Lists} from './MyComponents/Lists';
@@ -64,36 +64,7 @@ function App() {
   );
 }
 
-export default App;*/
-import React, { useState } from 'react';
-import Header from './MyComponents/Header';
-import EventPage from './MyComponents/EventPage';
-import { Footer } from './MyComponents/Footer';
-
-function App() {
-  const [isEventPageVisible, setIsEventPageVisible] = useState(false);
-
-  const handleEventPageVisibility = () => {
-    setIsEventPageVisible(true);
-  };
-
-  return (
-    <>
-      <Header title="NFT Ticket System" searchBar={false} />
-      {isEventPageVisible ? (
-        <EventPage />
-      ) : (
-        <div>
-          <h2>Welcome to the NFT Ticket System!</h2>
-          <p>Click the button below to access the event page.</p>
-          <button onClick={handleEventPageVisibility}>Go to Event Page</button>
-        </div>
-      )}
-      <Footer />
-    </>
-  );
-}
-
 export default App;
+
 
 
